@@ -11,8 +11,8 @@ spring:
       client:
         registration:
           okta:
-            client-id: 0oa11qog1j95LRAjS5d7
-            client-secret: wVEdxsypopHC3rxOIxYH0qI7xTiHDmocukBj94mS
+            client-id: <put your client-id>
+            client-secret: <put your client-secret here>
         provider:
           okta:
             authorization-uri: https://dev-10300395.okta.com/oauth2/v1/authorize
