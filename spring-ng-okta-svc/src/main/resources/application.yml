@@ -1,0 +1,22 @@
+#okta:
+#  oauth2:
+#    issuer: https://dev-10300395.okta.com/oauth2/default
+#    client-id: 0oa11qog1j95LRAjS5d7
+#    client-secret: wVEdxsypopHC3rxOIxYH0qI7xTiHDmocukBj94mS
+#    redirect-uri: /authorization-code/callback
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            client-id: 0oa11qog1j95LRAjS5d7
+            client-secret: wVEdxsypopHC3rxOIxYH0qI7xTiHDmocukBj94mS
+        provider:
+          okta:
+            authorization-uri: https://dev-10300395.okta.com/oauth2/v1/authorize
+            token-uri: https://dev-10300395.okta.com/oauth2/v1/token
+            user-info-uri: https://dev-10300395.okta.com/oauth2/v1/userinfo
+            user-name-attribute: sub
+            jwk-set-uri: https://dev-10300395.okta.com/oauth2/v1/keys

@@ -1,0 +1,3 @@
+rootProject.name = 'spring-ng-okta'
+include 'spring-ng-okta-svc'
+include 'spring-ng-okta-ui'
